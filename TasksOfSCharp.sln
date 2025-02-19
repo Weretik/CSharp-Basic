@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Introduction to OOP. Classes and objects", "1 Introduction to OOP Classes and objects\1. Introduction to OOP. Classes and objects.csproj", "{ACD30D2D-EF62-4C3F-8D59-6848599094C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACD30D2D-EF62-4C3F-8D59-6848599094C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACD30D2D-EF62-4C3F-8D59-6848599094C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACD30D2D-EF62-4C3F-8D59-6848599094C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACD30D2D-EF62-4C3F-8D59-6848599094C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {927DC19B-F6D0-4A1C-B9D3-29970F21E9EC}
+	EndGlobalSection
+EndGlobal
