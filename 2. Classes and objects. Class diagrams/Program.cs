@@ -7,7 +7,6 @@
 double gbt). Написати програму, яка виконуватиме конвертацію з гривні в одну із зазначених валют,
 також програма повинна проводити конвертацію із зазначених валют у гривню. 
 */
-using System.Security.Principal;
 
 Console.OutputEncoding = System.Text.Encoding.Unicode;
 Console.InputEncoding = System.Text.Encoding.Unicode;
@@ -37,6 +36,7 @@ Console.WriteLine($"{convertedAmount} {currency} = {amountBackInUAH} UAH");
 що відповідають прізвищу та імені співробітника. Створити метод, що розраховує оклад співробітника (залежно від посади та стажу) 
 та податковий збір. Написати програму, яка виводить на екран інформацію про співробітника (прізвище, ім'я, посада), оклад та податковий збір. 
 */
+
 Console.WriteLine();
 Console.WriteLine("Введіть ім'я співробітника:");
 string firstName = Console.ReadLine();
@@ -65,7 +65,7 @@ employee.DisplayInfo();
 У тілі класу створити два закриті поля string article, int quantity Створити метод розрахунку вартості замовлення з ПДВ та без ПДВ.
 Написати програму, яка виводить на екран суму оплати замовленого товару з ПДВ чи без ПДВ.
 */
-
+Console.WriteLine();
 Console.WriteLine("Введіть номер рахунку:");
 int account = Convert.ToInt32(Console.ReadLine());
 
@@ -86,15 +86,58 @@ double priceUnit = Convert.ToDouble(Console.ReadLine());
 
 
 Invoice invoice = new Invoice(account, customer, provider, article, quantity);
-Console.WriteLine("Cума оплати замовленого товару з ПДВ");
-invoice.CalculatePriceWithVAT(priceUnit);
-Console.WriteLine("Cума оплати замовленого товару без ПДВ");
-invoice.CalculatePriceWithoutVAT(priceUnit);
+
+Console.WriteLine($"Cума оплати замовленого товару з ПДВ: {invoice.CalculatePriceWithVAT(priceUnit)}");
+Console.WriteLine($"Cума оплати замовленого товару без ПДВ: {invoice.CalculatePriceWithoutVAT(priceUnit)}");
+
+
+/*
+ * Завдання 6
+
+Використовуючи Visual Studio, створіть проект за шаблоном Console Application. 
+Потрібно: Створити клас User, що містить інформацію про користувача (логін, ім'я, прізвище, вік, дату заповнення анкети). 
+Поле дата заповнення анкети має бути проініціалізоване лише один раз (при створенні екземпляра цього класу) без можливості 
+його подальшої зміни. Реалізуйте виведення на екран інформації про користувача.
+*/
+Console.WriteLine();
+
+Console.WriteLine("Введіть логін користувача:");
+string login = Console.ReadLine();
+
+Console.WriteLine("Введіть ім'я користувача:");
+string firstNameUser = Console.ReadLine();
+
+Console.WriteLine("Введіть прізвище користувача:");
+string lastNameUser = Console.ReadLine();
+
+Console.WriteLine("Введіть вік користувача:");
+byte age = Convert.ToByte(Console.ReadLine());
+
+User user = new User(login, firstNameUser, lastNameUser, age);
+user.DisplayUserInfo();
 
 
 
 
 
+// Завдання 6
+class User(string login, string firstName, string lastName, byte age)
+{
+    public string Login { get; set; } = login;
+    public string FirstName { get; set; } = firstName;
+    public string LastName { get; set; } = lastName;
+    public byte Age { get; set; } = age;
+    public DateTime RegistrationDate { get;} = DateTime.Now;
+
+    public void DisplayUserInfo()
+    {
+        Console.WriteLine($"Логін: {Login}");
+        Console.WriteLine($"Ім'я: {FirstName}");
+        Console.WriteLine($"Прізвище: {LastName}");
+        Console.WriteLine($"Вік: {Age}");
+        Console.WriteLine($"Дата заповнення анкети: {RegistrationDate.Date}");
+    }
+}
 
 
 // Завдання 4
