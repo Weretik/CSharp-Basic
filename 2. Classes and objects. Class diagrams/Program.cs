@@ -117,9 +117,12 @@ class Invoice(int account, string customer, string provider, string article, int
     {
         double vatPercent = 0.22;
         double priceWithoutVAT = CalculatePriceWithoutVAT(priceUnit);
-        double vat = priceWithoutVAT * vatPercent; 
+        double vat = priceWithoutVAT * vatPercent;
         return priceWithoutVAT + vat;
     }
+}
+
+
 
 
 
