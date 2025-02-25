@@ -1,5 +1,6 @@
 ﻿using System;
 using Task2;
+using Task3;
 /*
  * Завдання 2 
 
@@ -12,16 +13,21 @@ using Task2;
 передати 2 або 3 аргументи. Виведіть інформацію про те, як усі учні екземпляра класу ClassRoom вміють вчитися, читати, писати, відпочивати. 
 */
 
-class Program
-{
-    static void Main()
-    {
-        Pupil pupil1 = new ExcelentPupil();
-        Pupil pupil2 = new BadPupil();
 
-        ClassRoom classRoom = new ClassRoom(pupil1, pupil2);
+Pupil pupil1 = new ExcelentPupil();
+Pupil pupil2 = new BadPupil();
+Pupil pupil3 = new GoodPupil();
 
-        classRoom.ShowPupilsInfo();
-    }
-}
+ClassRoom classRoom = new ClassRoom(pupil1, pupil2, pupil3);
+
+classRoom.ShowPupilsInfo();
+
+
+
+Plane plane = new Plane(100, 200, 500000, 900, 2020, 10000, 150);
+Car car = new Car(50, 75, 30000, 180, 2018);
+Ship ship = new Ship(300, 400, 1000000, 60, 2015, 500, "Одеса");
+
+car.ShowInfo();
+ship.ShowInfo();
 
