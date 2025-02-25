@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Introduction to OOP. Cla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Classes and objects. Class diagrams", "2. Classes and objects. Class diagrams\2. Classes and objects. Class diagrams.csproj", "{50F75D6F-7DA3-4519-A46F-4EB16FD89380}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Inheritance  and polymorphism", "3. Inheritance  and polymorphism\3. Inheritance  and polymorphism.csproj", "{CF6A10DB-4A74-4717-B4FE-2ADE634C7C66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{50F75D6F-7DA3-4519-A46F-4EB16FD89380}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50F75D6F-7DA3-4519-A46F-4EB16FD89380}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50F75D6F-7DA3-4519-A46F-4EB16FD89380}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF6A10DB-4A74-4717-B4FE-2ADE634C7C66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF6A10DB-4A74-4717-B4FE-2ADE634C7C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF6A10DB-4A74-4717-B4FE-2ADE634C7C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF6A10DB-4A74-4717-B4FE-2ADE634C7C66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
