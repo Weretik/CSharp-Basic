@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Arrays;
+using System.Text;
 
 Console.OutputEncoding = System.Text.Encoding.Unicode;
 Console.InputEncoding = Encoding.Unicode;
@@ -41,3 +42,28 @@ foreach (var num in array)
         Console.WriteLine(num);
     }
 }
+/*
+ * Завдання 3
+Використовуючи Visual Studio, створіть проект за шаблоном Console Application. 
+Потрібно: 
+Створити клас MyMatrix, який забезпечує надання матриці довільного розміру з можливістю зміни числа рядків і стовпців. 
+Написати програму, яка виводить на екран матрицю і похідні від неї матриці різних порядків.
+*/
+
+Console.Write("Введіть кількість рядків: ");
+int rows = int.Parse(Console.ReadLine());
+Console.Write("Введіть кількість стовпців: ");
+int cols = int.Parse(Console.ReadLine());
+
+MyMatrix matrix = new MyMatrix(rows, cols);
+Console.WriteLine("Початкова матриця:");
+matrix.PrintMatrix();
+
+Console.Write("Введіть нову кількість рядків: ");
+int newRows = int.Parse(Console.ReadLine());
+Console.Write("Введіть нову кількість стовпців: ");
+int newCols = int.Parse(Console.ReadLine());
+
+matrix.Resize(newRows, newCols);
+Console.WriteLine("Змінена матриця:");
+matrix.PrintMatrix();
