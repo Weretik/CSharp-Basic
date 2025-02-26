@@ -39,3 +39,32 @@ documentHandler.Create();
 documentHandler.Open();
 documentHandler.Change();
 documentHandler.Save();
+
+/*
+ * Завдання 3 
+
+Використовуючи Visual Studio, створіть проект за шаблоном Console Application. 
+
+Потрібно: 
+
+Створіть 2 інтерфейси IPlayable та IRecodable. У кожному з інтерфейсів створіть по 3 методи 
+void Play() / void Pause() / void Stop() 
+та void Record() / void Pause() / void Stop() відповідно. 
+Створіть похідний клас Player від базових інтерфейсів IPlayable та IRecodable.
+Написати програму, яка виконує програвання та запис.
+*/
+
+Console.WriteLine();
+
+Player player = new();
+
+player.Play();
+player.Record();
+Console.WriteLine();
+
+((IRecodable)player).Pause();
+((IPlayable)player).Pause();
+Console.WriteLine();
+
+((IRecodable)player).Stop();
+((IPlayable)player).Stop();
