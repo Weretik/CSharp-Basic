@@ -42,6 +42,7 @@ foreach (var num in array)
         Console.WriteLine(num);
     }
 }
+Console.WriteLine();
 /*
  * Завдання 3
 Використовуючи Visual Studio, створіть проект за шаблоном Console Application. 
@@ -67,3 +68,38 @@ int newCols = int.Parse(Console.ReadLine());
 matrix.Resize(newRows, newCols);
 Console.WriteLine("Змінена матриця:");
 matrix.PrintMatrix();
+Console.WriteLine();
+
+/*
+ * Завдання 4
+ * 
+Використовуючи Visual Studio, створіть проект за шаблоном Console Application. 
+Потрібно: 
+
+Створити клас Article, що містить наступні закриті поля:
+• Назва товару;
+• назва магазину, в якому продається товар;
+• вартість товару в гривнях. 
+
+Створити клас Store, який містить закритий масив елементів типу Article.
+Забезпечити такі можливості:
+• висновок інформації про товар за номером за допомогою індексу;
+• висновок на екран інформації про товар, назва якого введено з клавіатури, якщо таких товарів немає, видати відповідне повідомлення.
+Написати програму, виведення на екран інформацію про товар.
+*/
+
+Shop shop = new Shop(
+    new Article("Гарбуз", "АТБ", 235.85),
+    new Article("Диня", "Рост", 155.99),
+    new Article("Булочка", "Кулиничі", 35.50)
+);
+
+Console.Write("Введіть індекс необхідного товару:");
+int index = int.Parse(Console.ReadLine());
+Console.WriteLine("Інформація про товар:");
+shop[index]?.showInfo();
+
+Console.Write("\nВведіть назву товару:");
+string productName = Console.ReadLine();
+Console.WriteLine("Інформація про товар:");
+shop[productName]?.showInfo();
