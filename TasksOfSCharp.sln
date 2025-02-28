@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Abstraction. Abstract cl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. Arrays and indexers", "5. Arrays and indexers\5. Arrays and indexers.csproj", "{92309C34-718A-4E99-AE3C-4E85DD462E44}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. Static and nested classes", "6 part\6. Static and nested classes.csproj", "{27EFF944-3A9E-4985-B046-ABB746C83E04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{92309C34-718A-4E99-AE3C-4E85DD462E44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92309C34-718A-4E99-AE3C-4E85DD462E44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92309C34-718A-4E99-AE3C-4E85DD462E44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27EFF944-3A9E-4985-B046-ABB746C83E04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27EFF944-3A9E-4985-B046-ABB746C83E04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27EFF944-3A9E-4985-B046-ABB746C83E04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27EFF944-3A9E-4985-B046-ABB746C83E04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
