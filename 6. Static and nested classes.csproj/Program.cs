@@ -56,6 +56,17 @@ namespace _6._Static_and_nested_classes
                 Console.Write(item + " ");
             }
 
+            /*
+             * Завдання 6
+
+             * Використовуючи Visual Studio, створіть проект за шаблоном Console Application. 
+             * Потрібно: 
+             * Створити статичний клас Calculator, з методами виконання основних арифметичних операцій. 
+             * Написати програму, яка виводить на екран основні арифметичні операції.
+            */
+            Console.WriteLine("Введіть два числа для арефметичних операцій:");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+            double num2 = Convert.ToDouble(Console.ReadLine());
         }
     }
 }
