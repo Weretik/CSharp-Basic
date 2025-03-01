@@ -45,7 +45,14 @@ The repository is organized into the following folders, corresponding to differe
    - **Task 3**: Extend the book example by adding a nested `Notes` class inside [`Book`](./6.%20Static%20and%20nested%20classes/Book.cs), allowing users to store notes.
    - **Task 4**: Create an extension method for arrays that sorts elements in ascending order, implemented in [`ExtensionArray`](./6.%20Static%20and%20nested%20classes/ExtensionArray.cs).
    - **Task 6**: Develop a static [`Calculator`](./6.%20Static%20and%20nested%20classes/Calculator.cs) class containing methods for basic arithmetic operations.
- 
+
+
+7. **Structures and Their Types**  
+   This section covers working with structures and comparing them with classes.
+   - **Task 2**: Implement a [`Train`](./7.%20Structures%20and%20their%20types/Train.cs) structure containing fields for the destination, train number, and departure time. Create an array of `Train` structures, sort them by train number, and allow the user to search for a train by number.
+   - **Task 3**: Create a `MyClass` class and a `MyStruct` structure, both containing a `string change` field. Implement methods in the `Program` class to modify the field and demonstrate the difference between reference types (classes) and value types (structures).
+   - **Task 5**: Develop a `Notebook` structure (located in [`Program.cs`](./7.%20Structures%20and%20their%20types/Program.cs)) with fields for model, manufacturer, and price. Implement a constructor to initialize these fields and a method to display the structure’s contents.
+
 
 Each section contains one or more C# files that demonstrate concepts through practical examples.
 
