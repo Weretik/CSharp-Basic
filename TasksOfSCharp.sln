@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. Structures and their typ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8. Enumeration", "8. Enumeration\8. Enumeration.csproj", "{5783418D-80C3-446C-9464-99FEFC758060}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9. Delegates", "9. Delegates\9. Delegates.csproj", "{9E3AA239-5205-4814-A1C8-67FC14481171}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{5783418D-80C3-446C-9464-99FEFC758060}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5783418D-80C3-446C-9464-99FEFC758060}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5783418D-80C3-446C-9464-99FEFC758060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E3AA239-5205-4814-A1C8-67FC14481171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E3AA239-5205-4814-A1C8-67FC14481171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E3AA239-5205-4814-A1C8-67FC14481171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E3AA239-5205-4814-A1C8-67FC14481171}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
