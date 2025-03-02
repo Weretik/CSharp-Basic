@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Introduction to OOP. Cla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Classes and objects. Class diagrams", "2. Classes and objects. Class diagrams\2. Classes and objects. Class diagrams.csproj", "{50F75D6F-7DA3-4519-A46F-4EB16FD89380}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Inheritance  and polymorphism", "3. Inheritance  and polymorphism\3. Inheritance  and polymorphism.csproj", "{CF6A10DB-4A74-4717-B4FE-2ADE634C7C66}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Abstraction. Abstract classes and interfaces", "4. Abstraction. Abstract classes and interfaces\4. Abstraction. Abstract classes and interfaces.csproj", "{D7114B79-5C19-49CF-9A2B-3A181DFCEA7A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. Arrays and indexers", "5. Arrays and indexers\5. Arrays and indexers.csproj", "{92309C34-718A-4E99-AE3C-4E85DD462E44}"
@@ -16,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. Static and nested classes", "6 part\6. Static and nested classes.csproj", "{27EFF944-3A9E-4985-B046-ABB746C83E04}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. Structures and their types", "7. Structures and their types\7. Structures and their types.csproj", "{6195EBF0-74FD-40E6-A8BB-A9AA466B3FFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8. Enumeration", "8. Enumeration\8. Enumeration.csproj", "{5783418D-80C3-446C-9464-99FEFC758060}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +31,6 @@ Global
 		{50F75D6F-7DA3-4519-A46F-4EB16FD89380}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50F75D6F-7DA3-4519-A46F-4EB16FD89380}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50F75D6F-7DA3-4519-A46F-4EB16FD89380}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CF6A10DB-4A74-4717-B4FE-2ADE634C7C66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF6A10DB-4A74-4717-B4FE-2ADE634C7C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF6A10DB-4A74-4717-B4FE-2ADE634C7C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF6A10DB-4A74-4717-B4FE-2ADE634C7C66}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D7114B79-5C19-49CF-9A2B-3A181DFCEA7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D7114B79-5C19-49CF-9A2B-3A181DFCEA7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7114B79-5C19-49CF-9A2B-3A181DFCEA7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{6195EBF0-74FD-40E6-A8BB-A9AA466B3FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6195EBF0-74FD-40E6-A8BB-A9AA466B3FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6195EBF0-74FD-40E6-A8BB-A9AA466B3FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5783418D-80C3-446C-9464-99FEFC758060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5783418D-80C3-446C-9464-99FEFC758060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5783418D-80C3-446C-9464-99FEFC758060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5783418D-80C3-446C-9464-99FEFC758060}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
