@@ -54,6 +54,12 @@ The repository is organized into the following folders, corresponding to differe
    - **Task 5**: Develop a `Notebook` structure (located in [`Program.cs`](./7.%20Structures%20and%20their%20types/Program.cs)) with fields for model, manufacturer, and price. Implement a constructor to initialize these fields and a method to display the structure’s contents.
 
 
+8. **Enumeration**  
+   - **Task 2**: Implement a static [`Printer`](./8.%20Enumeration/Printer.cs) class with a `Print(string text, int color)` method to display text in a user-selected color.
+   - **Task 3**: Develop an [`Accountant`](./8.%20Enumeration/Accountant.cs) class that determines if an employee is eligible for a bonus based on an `enum` representing job positions and their required work hours.
+   - **Task 5**: Create a program (located in [`Program.cs`](./8.%20Enumeration/Program.cs)) that accepts a user's birthdate and calculates the number of days until their next birthday.
+
+
 Each section contains one or more C# files that demonstrate concepts through practical examples.
 
 ## Requirements
