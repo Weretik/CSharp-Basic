@@ -28,8 +28,8 @@
 
             Console.WriteLine("Введіть друге число: ");
             double num2 = Convert.ToDouble(Console.ReadLine());
-
-            switch (operation) 
+            Console.WriteLine("Результат операції:");
+            switch (operation)
             {
                 case "Add":
                     Console.WriteLine(add(num1, num2));
@@ -48,8 +48,57 @@
                     break;
             }
 
+            /*
+             * Завдання 3 
+
+            Використовуючи Visual Studio, створіть проект за шаблоном Console Application. 
+            Створіть анонімний метод, який приймає як аргумент масив делегатів і повертає середнє арифметичне значення значень методів, 
+            повідомлених з делегатами в масиві. Методи, повідомлені з делегатами з масиву, повертають випадкове значення типу int. 
+            */
+            Console.WriteLine();
+
+            RandomNumberDelegate[] delegates = new RandomNumberDelegate[]
+            {
+                new RandomNumberDelegate(GenerateRandomNumber),
+                new RandomNumberDelegate(GenerateRandomNumber),
+                new RandomNumberDelegate(GenerateRandomNumber),
+                new RandomNumberDelegate(GenerateRandomNumber)
+            };
+
+            AverageDelegate averageMethod = delegate (RandomNumberDelegate[] delArray)
+            {
+                double sum = 0;
+                foreach (var del in delArray)
+                {
+                    sum += del();
+                }
+                return sum / delArray.Length; 
+            };
+
+            double average = averageMethod(delegates);
+
+            // Выводим результат
+            Console.WriteLine("Среднее арифметическое значение: " + average);
+
+
+
+
+
         }
+    
+
+        //Завдання 2 
         delegate double Operation(double a, double b);
 
+        //Завдання 3
+        delegate double AverageDelegate(RandomNumberDelegate[] delArray);
+        delegate int RandomNumberDelegate();
+
+        public static int GenerateRandomNumber()
+        {
+            Random rnd = new Random();
+            return rnd.Next(1, 100);
+        }
     }
 }
+
