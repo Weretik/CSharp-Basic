@@ -45,6 +45,20 @@ namespace _8._Enumeration
             int hours = int.Parse(Console.ReadLine());
 
             accountant.AskForBonus(worker, hours);
+
+            /*
+             * Завдання 5
+
+            Використовуючи Visual Studio, створіть проект за шаблоном Console Application. 
+            Реалізуйте програму, яка прийматиме від користувача дату народження і виводити кількість днів до наступного дня народження.
+            */
+            Console.WriteLine();
+            Console.WriteLine("Введіть вашу дату народження (формат: dd.MM.yyyy):");
+            DateTime dateBirthday = DateTime.Parse(Console.ReadLine());
+            DateTime today = DateTime.Now;
+            TimeSpan daysToBirthday = dateBirthday.AddYears(today.Year - dateBirthday.Year) - today;
+            Console.WriteLine($"До Вашого дня народження залишилося {daysToBirthday.Days} днів");
+
         }
     }
 }
