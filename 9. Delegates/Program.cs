@@ -77,12 +77,18 @@
 
             double average = averageMethod(delegates);
 
-            // Выводим результат
             Console.WriteLine("Среднее арифметическое значение: " + average);
 
 
+            /*
+             * Завдання 5
 
-
+            Використовуючи Visual Studio, створіть проект за шаблоном Console Application. 
+            Створіть анонімний метод, який приймає як параметри три цілих аргументи і повертає середнє арифметичне цих аргументів.
+            */
+            Console.WriteLine();
+            Average avr = delegate (int a, int b, int c) { return (a + b + c) / 3; };
+            Console.WriteLine($"середнє арифметичне значення 3-х чисел (8, 9, 11): {avr(8, 9, 11)}");
 
         }
     
@@ -99,6 +105,8 @@
             Random rnd = new Random();
             return rnd.Next(1, 100);
         }
+        //Завдання 5
+        delegate double Average(int a, int b, int c);
     }
 }
 
