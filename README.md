@@ -60,6 +60,11 @@ The repository is organized into the following folders, corresponding to differe
    - **Task 5**: Create a program (located in [`Program.cs`](./8.%20Enumeration/Program.cs)) that accepts a user's birthdate and calculates the number of days until their next birthday.
 
 
+9. **Delegates**  
+   - **Task 2**: Implement four lambda operators to perform arithmetic operations (`Add`, `Sub`, `Mul`, `Div`). Ensure the division operator handles division by zero.
+   - **Task 3**: Create an anonymous method that takes an array of delegates and returns the average of the results of delegate calls.
+   - **Task 5**: Develop an anonymous method that accepts three integer arguments and returns their average value.
+
 Each section contains one or more C# files that demonstrate concepts through practical examples.
 
 ## Requirements
