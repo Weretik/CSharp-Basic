@@ -70,6 +70,13 @@ The repository is organized into the following folders, corresponding to differe
    - **Task 3**: Develop a generic [`MagicBag`](./10.%20Generic/MagicBag.cs) class that provides a magical way of assigning gifts based on the receiver's type. Each entity can receive only one gift per day.
    - **Task 4**: Extend the `MyList` class by implementing an extension method that converts its elements into an array.
 
+
+11. **Generic Constraints**  
+   - **Task 2**: Implement a generic [`CarCollection`](./11.%20Generic%20Constraints/CarCollection.cs) class that allows managing a collection of cars. The class should support adding cars with a name and year, retrieving cars by index, and getting the total count. Additionally, implement a method to clear all cars from the collection.
+   - **Task 3**: Develop a generic [`Dictionary`](./11.%20Generic%20Constraints/Dictionary.cs) class that mimics the behavior of `Dictionary<TKey, TValue>` from `System.Collections.Generic`. Implement methods for adding key-value pairs, retrieving values by indexer, and getting the total count of pairs.
+   - **Task 7**: The implementation for this task is located in [`Program.cs`](./11.%20Generic%20Constraints/Program.cs). Create a generic class that includes a static factory method `T FactoryMethod()`, which generates instances of the type specified as the generic parameter `T`. Ensure constraints are applied appropriately.  
+
+
 Each section contains one or more C# files that demonstrate concepts through practical examples.
 
 ## Requirements
