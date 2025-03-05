@@ -41,6 +41,20 @@
             Console.WriteLine(magicBag.GiveGift(human));
             Console.WriteLine(magicBag.GiveGift(elf));    
             Console.WriteLine(magicBag.GiveGift(human));
+            /*
+             * 
+            Завдання 4 
+
+            Використовуючи Visual Studio, створіть проект за шаблоном Console Application. 
+            Створіть метод, що розширює: public static T[ ] GetArray(this MyList list) Застосуйте розширюючий метод до екземпляра типу MyList, 
+            розробленого в домашньому завданні 2 для даного уроку. Виведіть на екран значення елементів масиву, який повернув метод GetArray(), що розширює метод.
+            */
+            Console.WriteLine();
+            int[] arrayInt = list.GetArrayList();
+            foreach (var item in arrayInt)
+            {
+                Console.WriteLine(item);
+            }
 
         }
     }
