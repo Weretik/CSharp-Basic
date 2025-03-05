@@ -23,6 +23,25 @@
 
             Console.WriteLine($"Другий елемент в списку: {list[1]}");
             Console.WriteLine($"Загальна кількість елементыв в списку: {list.Count}");
+
+            /*
+             * Завдання 3 
+
+            Створіть проект Console Application, де реалізуйте типізований клас "Чарівний мішок".
+            Чарівність полягає в тому, що подарунок сам з'являється у мішку та залежить від того, хто намагається відкрити мішок. 
+            Причому подарунок для однієї істоти може з'явитись лише 1 раз на день. 
+            Використовуйте обмеження типу - інтерфейс із властивістю, що зберігає тип істоти, яка намагається отримати подарунок із мішка.
+            */
+            Console.WriteLine();
+            Human human = new Human("Людина");
+            Elf elf = new Elf("Ельф");
+
+            MagicBag<ICreature> magicBag = new MagicBag<ICreature>();
+
+            Console.WriteLine(magicBag.GiveGift(human));
+            Console.WriteLine(magicBag.GiveGift(elf));    
+            Console.WriteLine(magicBag.GiveGift(human));
+
         }
     }
 }
