@@ -46,10 +46,37 @@
             Console.WriteLine($"Кількість бананів: {dictionary["banana"]}");
 
             Console.WriteLine($"Кількість пар елементів: {dictionary.Count}");
+
+            /*
+             * Використовуючи Visual Studio, створіть проект за шаблоном Console Application. 
+             * Створіть узагальнений клас MyClass, що містить статичний фабричний метод – T FacrotyMethod(), 
+             * який породжуватиме екземпляри типу, вказаного як параметр типу (покажчика місця заповнення типом – Т).
+             * Яким має бути тип, що підставляється під T?
+             * */
+            var intObject = MyClass<int>.FactoryMethod();
+            Console.WriteLine($"Тип: {intObject.GetType()}, Значення: {intObject}");
+
+            var stringBuilderObject = MyClass<System.Text.StringBuilder>.FactoryMethod();
+            Console.WriteLine($"Тип: {stringBuilderObject.GetType()}, Значення: {stringBuilderObject}");
+
+            var dateTimeObject = MyClass<DateTime>.FactoryMethod(); 
+            Console.WriteLine($"Тип: {dateTimeObject.GetType()}, Значення: {dateTimeObject}");
+            /*
+             * Висновок:
+            Тип, який підставляється під T, має бути типом, що має безпараметричний конструктор. 
+            Це обмеження дозволяє використовувати new T() для створення екземплярів типу T.
+            */
         }
 
 
 
     }
-    
+    public class MyClass<T> where T : new()
+    {
+        public static T FactoryMethod()
+        {
+            return new T();
+        }
+    }
+
 }
