@@ -65,6 +65,11 @@ The repository is organized into the following folders, corresponding to differe
    - **Task 3**: Create an anonymous method that takes an array of delegates and returns the average of the results of delegate calls.
    - **Task 5**: Develop an anonymous method that accepts three integer arguments and returns their average value.
 
+10. **Generic**  
+   - **Task 2**: Implement a generic [`MyList`](./10.%20Generic/MyList.cs) class that mimics the behavior of `List<T>`. The class should include methods for adding elements, an indexer for retrieving elements by index, and a read-only property for getting the total count.
+   - **Task 3**: Develop a generic [`MagicBag`](./10.%20Generic/MagicBag.cs) class that provides a magical way of assigning gifts based on the receiver's type. Each entity can receive only one gift per day.
+   - **Task 4**: Extend the `MyList` class by implementing an extension method that converts its elements into an array.
+
 Each section contains one or more C# files that demonstrate concepts through practical examples.
 
 ## Requirements
