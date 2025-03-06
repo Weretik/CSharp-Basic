@@ -19,7 +19,7 @@
                 • якщо значення року введено не у відповідному форматі видає виняток;
                 • виведення на екран прізвища працівника, стаж роботи якого перевищує введене значення.
             */
-            /*
+            
             Worker[] workers = new Worker[2];
 
             for (int i = 0; i < workers.Length; i++)
@@ -63,7 +63,7 @@
                 Console.Write($"Імя: {worker.FirstName}, Стаж: {worker.GetExperience()} років");
                 Console.WriteLine();
             }
-            */
+            
             /*
              * Завдання 3 
 
@@ -123,9 +123,62 @@
 
 
 
+            /*
+             * Завдання 5
 
+            Використовуючи Visual Studio, створіть проект за шаблоном Console Application. Створіть клас Calculator. 
+            У тілі класу створіть чотири методи для арифметичних дій: Add – додавання, Sub – віднімання,
+            Mul – множення, Div – розподіл. Метод поділу повинен перевірити поділ на нуль, якщо перевірка не проходить, 
+            згенерувати виняток. Користувач вводить значення, над якими хоче зробити операцію та вибрати саму операцію. 
+            У разі виникнення помилок повинні викидатися винятки.
+            */
+            Calculator calc = new Calculator();
+            try
+            {
+                Console.WriteLine("Введіть перше число:");
+                double num1 = Convert.ToDouble(Console.ReadLine());
 
+                Console.WriteLine("Введіть друге число:");
+                double num2 = Convert.ToDouble(Console.ReadLine());
 
+                Console.WriteLine("Виберіть операцію (+, -, *, /):");
+                string operation = Console.ReadLine();
+
+                double result = 0;
+
+                switch (operation)
+                {
+                    case "+":
+                        result = calc.Add(num1, num2);
+                        break;
+                    case "-":
+                        result = calc.Sub(num1, num2);
+                        break;
+                    case "*":
+                        result = calc.Mul(num1, num2);
+                        break;
+                    case "/":
+                        result = calc.Div(num1, num2);
+                        break;
+                    default:
+                        Console.WriteLine("Невідома операція.");
+                        break;
+                }
+                Console.WriteLine($"Результат: {result}");
+
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Помилка: введено невірне число.");
+            }
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Сталася помилка: {ex.Message}");
+            }
 
 
 
