@@ -19,7 +19,7 @@
                 • якщо значення року введено не у відповідному форматі видає виняток;
                 • виведення на екран прізвища працівника, стаж роботи якого перевищує введене значення.
             */
-
+            /*
             Worker[] workers = new Worker[2];
 
             for (int i = 0; i < workers.Length; i++)
@@ -63,6 +63,73 @@
                 Console.Write($"Імя: {worker.FirstName}, Стаж: {worker.GetExperience()} років");
                 Console.WriteLine();
             }
+            */
+            /*
+             * Завдання 3 
+
+                Використовуючи Visual Studio, створіть проект за шаблоном Console Application. Потрібно описати структуру з іменем Price, що містить такі поля:
+                • назва товару;
+                • назва магазину, де продається товар;
+                • вартість товару у гривнях.
+                Написати програму, яка виконує такі дії:
+                • введення з клавіатури даних до масиву, що складається з двох елементів типу Price (записи мають бути впорядковані в алфавітному порядку за назвами магазинів);
+                • виведення на екран інформації про товари, що продаються в магазині, назва якого введена з клавіатури (якщо такого магазину немає, вивести виняток).
+            */
+            Price[] prices = new Price[2];
+
+            for (int i = 0; i < prices.Length; i++)
+            {
+                Console.WriteLine("Введіть назву товара");
+                string productName = Console.ReadLine();
+                Console.WriteLine("Введіть назву магазину");
+                string shopName = Console.ReadLine();
+                Console.WriteLine("Введіть ціну за товар");
+                double price = double.Parse(Console.ReadLine());
+
+                prices[i] = new Price(productName, shopName, price);
+                Console.WriteLine();
+            }
+
+            Array.Sort(prices, (x, y) => x.shopName.CompareTo(y.shopName));
+
+            Console.Write("Який магазин Вас цікавить?: ");
+            foreach (Price price in prices)
+            {
+                Console.Write($"{price.shopName} ");
+   
+            }
+            Console.WriteLine();
+            string shop = Console.ReadLine();
+
+            try
+            {
+                if (prices[0].shopName == shop)
+                {
+                    prices[0].ShowInfo();
+                }
+                else if (prices[1].shopName == shop)
+                {
+                    prices[1].ShowInfo();
+                }
+                else
+                {
+                    throw new Exception("Такого магазину немає");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
