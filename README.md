@@ -77,6 +77,13 @@ The repository is organized into the following folders, corresponding to differe
    - **Task 7**: The implementation for this task is located in [`Program.cs`](./11.%20Generic%20Constraints/Program.cs). Create a generic class that includes a static factory method `T FactoryMethod()`, which generates instances of the type specified as the generic parameter `T`. Ensure constraints are applied appropriately.  
 
 
+15. **Exceptions**  
+   - **Task 2**: Implement a [`Worker`](./Exceptions/Worker.cs) structure containing fields for the employee's name, position, and the year they started working. Ensure input validation and sort the records alphabetically. If the input year format is incorrect, throw an exception. The program should display employees whose work experience exceeds a user-defined value.
+   - **Task 3**: Create a [`Price`](./Exceptions/Price.cs) structure that stores information about a product, including its name, store, and price. The program should sort records alphabetically by store name and allow users to search for a store. If the store is not found, throw an exception.
+   - **Task 5**: Develop a [`Calculator`](./Exceptions/Calculator.cs) class with methods for addition, subtraction, multiplication, and division. The division method should check for division by zero and throw an exception if invalid input is detected. The program should allow users to input numbers and choose an operation, handling errors gracefully.
+
+
+
 Each section contains one or more C# files that demonstrate concepts through practical examples.
 
 ## Requirements
