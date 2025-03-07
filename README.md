@@ -76,6 +76,10 @@ The repository is organized into the following folders, corresponding to differe
    - **Task 3**: Develop a generic [`Dictionary`](./11.%20Generic%20Constraints/Dictionary.cs) class that mimics the behavior of `Dictionary<TKey, TValue>` from `System.Collections.Generic`. Implement methods for adding key-value pairs, retrieving values by indexer, and getting the total count of pairs.
    - **Task 7**: The implementation for this task is located in [`Program.cs`](./11.%20Generic%20Constraints/Program.cs). Create a generic class that includes a static factory method `T FactoryMethod()`, which generates instances of the type specified as the generic parameter `T`. Ensure constraints are applied appropriately.  
 
+13. **Threads**  
+   - **Task 1**: Implemented in [`Thread`](./Thread/Program.cs), this task creates a console application that simulates falling character chains of random lengths. The first character is white, the second is light green, and the rest are dark green. Each step, all characters change their values, and once a chain reaches the bottom, it disappears, and a new chain is generated at the top.
+   - **Task 2**: Implemented in [`Thread2`](./Thread/Program.cs), this task extends the previous one by allowing two character chains to exist in a single column simultaneously.
+   - **Task 4**: Implemented in [`Thread`](./Thread%202/Program.cs), this task involves writing a recursive method where each new call is executed in a separate thread.
 
 15. **Exceptions**  
    - **Task 2**: Implement a [`Worker`](./Exceptions/Worker.cs) structure containing fields for the employee's name, position, and the year they started working. Ensure input validation and sort the records alphabetically. If the input year format is incorrect, throw an exception. The program should display employees whose work experience exceeds a user-defined value.
