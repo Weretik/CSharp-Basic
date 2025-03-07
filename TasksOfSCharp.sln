@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Generic Constraints", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "Exceptions\Exceptions.csproj", "{B447209C-A4F8-441F-85E5-DB0A7216CE76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread", "Thread\Thread.csproj", "{9C9AB4A8-EB01-4F69-B139-BC47968CDD61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread 2", "Thread 2\Thread 2.csproj", "{7F978C65-7737-4423-8C5D-4DA9BDFA7206}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{B447209C-A4F8-441F-85E5-DB0A7216CE76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B447209C-A4F8-441F-85E5-DB0A7216CE76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B447209C-A4F8-441F-85E5-DB0A7216CE76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C9AB4A8-EB01-4F69-B139-BC47968CDD61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C9AB4A8-EB01-4F69-B139-BC47968CDD61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C9AB4A8-EB01-4F69-B139-BC47968CDD61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C9AB4A8-EB01-4F69-B139-BC47968CDD61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F978C65-7737-4423-8C5D-4DA9BDFA7206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F978C65-7737-4423-8C5D-4DA9BDFA7206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F978C65-7737-4423-8C5D-4DA9BDFA7206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F978C65-7737-4423-8C5D-4DA9BDFA7206}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
