@@ -81,6 +81,12 @@ The repository is organized into the following folders, corresponding to differe
    - **Task 2**: Implemented in [`Thread2`](./Thread/Program.cs), this task extends the previous one by allowing two character chains to exist in a single column simultaneously.
    - **Task 4**: Implemented in [`Thread`](./Thread%202/Program.cs), this task involves writing a recursive method where each new call is executed in a separate thread.
 
+14. **Collections**  
+   - **Task 2**: Implement a [`MyList`](./Collections/MyList.cs) collection that mimics the behavior of `List<T>`. The class should include methods for adding elements, an indexer for retrieving elements by index, and a read-only property for getting the total count. Implement enumeration support to allow iterating over the collection using loops.
+   - **Task 3**: Develop a [`MyDictionary`](./Collections/MyDictionary.cs) collection that functions similarly to `Dictionary<TKey, TValue>`. The class should support adding key-value pairs, retrieving values by indexer, and iterating through the collection in a loop.
+   - **Task 4**: Extend `IEnumerable` with a generic extension method `public static T[] GetArray(this IEnumerable list)`, which converts an enumerable collection into an array. Apply this extension to `MyList` and display the resulting array.
+
+
 15. **Exceptions**  
    - **Task 2**: Implement a [`Worker`](./Exceptions/Worker.cs) structure containing fields for the employee's name, position, and the year they started working. Ensure input validation and sort the records alphabetically. If the input year format is incorrect, throw an exception. The program should display employees whose work experience exceeds a user-defined value.
    - **Task 3**: Create a [`Price`](./Exceptions/Price.cs) structure that stores information about a product, including its name, store, and price. The program should sort records alphabetically by store name and allow users to search for a store. If the store is not found, throw an exception.
