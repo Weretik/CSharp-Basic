@@ -55,6 +55,35 @@ namespace Collections
 
             Console.WriteLine("\nПеребір елементів:");
             myDict.Iterate();
+            /*
+             * Завдання 4 
+
+            Використовуючи Visual Studio, створіть проект за шаблоном Console Application. 
+            Створіть метод, що розширює: public static T[ ] GetArray(this IEnumerable list){…} З
+            астосуйте розширюючий метод до екземпляра типу MyList, розробленого в домашньому завданні 2 для даного уроку. 
+            Виведіть на екран значення елементів масиву, який повернув метод GetArray(), що розширює метод.
+            */
+            Console.WriteLine();
+            int[] array = myList.GetArray();
+
+            Console.WriteLine("Елементи масиву що розширює метод:");
+            foreach (var item in array)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+    }
+    public static class Extensions
+    {
+        public static T[] GetArray<T>(this IEnumerable<T> list)
+        {
+            List<T> tempList = new List<T>();
+            foreach (var item in list)
+            {
+                tempList.Add(item);
+            }
+            return tempList.ToArray();
         }
     }
 }
