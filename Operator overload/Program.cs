@@ -57,6 +57,20 @@ namespace Operator_overload
             Console.WriteLine($"Дім 1:{house1}");
             Console.WriteLine($"Дім 2:{house2}");
             Console.WriteLine($"Дім 3:{house3}");
+
+
+            /*Завдання 4 
+
+            Створіть клас, який містить інформацію про дату (день, місяць, рік). 
+            За допомогою механізму перевантаження операторів визначте операцію різниці двох дат (результат у вигляді кількості днів між датами), 
+            а також операцію збільшення дати на певне кількість днів. 
+            */
+            DateMath date1 = new DateMath(9, 3, 2025);
+            DateMath date2 = new DateMath(11, 9, 2022);
+            Console.WriteLine($"Різниця між датами: {date1 - date2} днів");
+            
+            date1 = date1 + 10;
+            Console.WriteLine($"Через десять днів буде {date1}");
         }
     }
 }
