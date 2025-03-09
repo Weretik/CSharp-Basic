@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operator overload", "Operator overload\Operator overload.csproj", "{3AC28EBB-D56C-4551-A5D5-F0A3CBA4F168}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anonymous and dynamic types. LINQ.", "Anonymous and dynamic types. LINQ\Anonymous and dynamic types. LINQ..csproj", "{6DD33903-7434-4CDB-8FB5-48447CFCA280}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{3AC28EBB-D56C-4551-A5D5-F0A3CBA4F168}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AC28EBB-D56C-4551-A5D5-F0A3CBA4F168}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AC28EBB-D56C-4551-A5D5-F0A3CBA4F168}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DD33903-7434-4CDB-8FB5-48447CFCA280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DD33903-7434-4CDB-8FB5-48447CFCA280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DD33903-7434-4CDB-8FB5-48447CFCA280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DD33903-7434-4CDB-8FB5-48447CFCA280}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
