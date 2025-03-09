@@ -71,6 +71,19 @@ namespace Operator_overload
             
             date1 = date1 + 10;
             Console.WriteLine($"Через десять днів буде {date1}");
+
+            /*
+             * Завдання 6
+
+            Використовуючи Visual Studio, створіть проект за шаблоном Console Application. 
+            Створіть структуру, яка описує точку у тривимірній системі координат. 
+            Організуйте можливість складання двох точок через використання навантаження оператора +.
+            */
+            Console.WriteLine();
+            Point p1 = new Point(1, 2, 3);
+            Point p2 = new Point(4, 5, 6);
+            Point p3 = p1 + p2;
+            Console.WriteLine(p3);
         }
     }
 }
