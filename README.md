@@ -93,6 +93,11 @@ The repository is organized into the following folders, corresponding to differe
    - **Task 5**: Develop a [`Calculator`](./Exceptions/Calculator.cs) class with methods for addition, subtraction, multiplication, and division. The division method should check for division by zero and throw an exception if invalid input is detected. The program should allow users to input numbers and choose an operation, handling errors gracefully.
 
 
+16. **Operator Overload**  
+   - **Task 2**: Implemented in [`Block`](./Operator%20overload/Block.cs), this task defines a class with four side length fields. Override the `Equals` method for object comparison and the `ToString` method to return a string representation of the block.
+   - **Task 3**: Implemented in [`House`](./Operator%20overload/House.cs), this task creates a class with two fields and properties. Implement `Clone()` for shallow copying and `DeepClone()` for deep copying.
+   - **Task 4**: Implemented in [`DateMath`](./Operator%20overload/DateMath.cs), this task defines a class storing date information (day, month, year) and overloads operators to calculate the difference between two dates (in days) and to increase a date by a given number of days.
+   - **Task 6**: Implemented in [`Point`](./Operator%20overload/Point.cs), this task defines a structure for a 3D point and overloads the `+` operator to allow the addition of two points.
 
 Each section contains one or more C# files that demonstrate concepts through practical examples.
 
