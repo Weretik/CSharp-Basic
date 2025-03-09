@@ -99,6 +99,12 @@ The repository is organized into the following folders, corresponding to differe
    - **Task 4**: Implemented in [`DateMath`](./Operator%20overload/DateMath.cs), this task defines a class storing date information (day, month, year) and overloads operators to calculate the difference between two dates (in days) and to increase a date by a given number of days.
    - **Task 6**: Implemented in [`Point`](./Operator%20overload/Point.cs), this task defines a structure for a 3D point and overloads the `+` operator to allow the addition of two points.
 
+17. **Anonymous and Dynamic Types. LINQ**  
+   - **Task 2**: Implemented in [`Program.cs`](./Anonymous%20and%20dynamic%20types.%20LINQ/Program.cs), this task involves creating a simple collection of cars (brand, model, year, color) and a second collection containing model, buyer's name, and phone number. Using a basic LINQ query, display buyer information along with the full details of the purchased car.
+   - **Task 3**: Implemented in [`Program.cs`](./Anonymous%20and%20dynamic%20types.%20LINQ/Program.cs), this task uses anonymous and dynamic types to create an English-Russian dictionary with ten words and display its contents.
+   - **Task 5**: Implemented in [`Program.cs`](./Anonymous%20and%20dynamic%20types.%20LINQ/Program.cs), this task defines a `Calculator` class with methods that accept and return `dynamic` types, demonstrating the flexibility of `dynamic` in calculations.
+
+
 Each section contains one or more C# files that demonstrate concepts through practical examples.
 
 ## Requirements
