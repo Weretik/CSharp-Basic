@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operator overload", "Operat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anonymous and dynamic types. LINQ.", "Anonymous and dynamic types. LINQ\Anonymous and dynamic types. LINQ..csproj", "{6DD33903-7434-4CDB-8FB5-48447CFCA280}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namespace. Preprocessor directives.", "Namespace. Preprocessor directives\Namespace. Preprocessor directives..csproj", "{A8F605E4-C159-4EED-8A1D-0BA905CFD245}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{6DD33903-7434-4CDB-8FB5-48447CFCA280}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DD33903-7434-4CDB-8FB5-48447CFCA280}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DD33903-7434-4CDB-8FB5-48447CFCA280}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8F605E4-C159-4EED-8A1D-0BA905CFD245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8F605E4-C159-4EED-8A1D-0BA905CFD245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8F605E4-C159-4EED-8A1D-0BA905CFD245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8F605E4-C159-4EED-8A1D-0BA905CFD245}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

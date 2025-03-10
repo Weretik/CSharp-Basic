@@ -105,6 +105,11 @@ The repository is organized into the following folders, corresponding to differe
    - **Task 5**: Implemented in [`Program.cs`](./Anonymous%20and%20dynamic%20types.%20LINQ/Program.cs), this task defines a `Calculator` class with methods that accept and return `dynamic` types, demonstrating the flexibility of `dynamic` in calculations.
 
 
+18. **Namespace. Preprocessor Directives**  
+   - **Task 1**: Integrated `MyDictionary` from Lesson 14 into a separate namespace and configured its usage similarly to `Dictionary<TKey, TValue>` via dependencies in the solution explorer.
+   - **Task 2**: Created separate namespaces for different classes and demonstrated that a public method in a class is accessible not only from the current assembly but also from a derived class in an external assembly.
+   - **Task 4**: Defined a custom namespace `MyNamespace` containing a class `MyClass` and successfully linked it to another program.
+
 Each section contains one or more C# files that demonstrate concepts through practical examples.
 
 ## Requirements
