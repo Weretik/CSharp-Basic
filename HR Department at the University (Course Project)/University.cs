@@ -79,6 +79,32 @@ namespace HR_Department_at_the_University__Course_Project_
                 Console.WriteLine($"{h.HeadOfDepartment?.FullName}, Кафедра: {h.Name}, Факультет: {h.Faculty.Name}");
             }
         }
+
+        /// Пункт 5: Повертає список усіх груп без старост і кафедр без завідувачів.
+        public void ShowAllGroupsAndDepartmentsWithoutHeadsAndHeadStudents()
+        {
+            var groups = Faculties
+                .SelectMany(f => f.Departments)
+                .SelectMany(d => d.Groups)
+                .Where(g => g.HeadStudent == null)
+                .ToList();
+
+            Console.WriteLine("\nСписок груп без старост:");
+            foreach (var g in groups)
+            {
+                Console.WriteLine($"{g.Name}, Кафедра: {g.ProfileDepartment.Name}, Факультет: {g.ProfileDepartment.Faculty.Name}");
+            }
+
+            var departments = Faculties
+                .SelectMany(f => f.Departments)
+                .Where(d => d.HeadOfDepartment == null)
+                .ToList();
+            Console.WriteLine("\nСписок кафедр без завідувачів:");
+            foreach (var d in departments)
+            {
+                Console.WriteLine($"{d.Name}, Факультет: {d.Faculty.Name}");
+            }
+        }
     }
     public class Department
     {
