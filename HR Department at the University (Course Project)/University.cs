@@ -43,6 +43,28 @@ namespace HR_Department_at_the_University__Course_Project_
         {
             ShowAllStudents(sortBy, false);
         }
+
+        /// Пункт 3: Повертає список усіх викладачів з можливістю сортування
+        public void ShowAllTeachers(string sortBy)
+        {
+            var teachers = Faculties
+                .SelectMany(f => f.Departments)
+                .SelectMany(d => d.Teachers)
+                .Where(t => t.IsTeacher)
+                .ToList();
+            teachers = sortBy.ToLower() switch
+            {
+                "піб" => teachers.OrderBy(t => t.FullName).ToList(),
+                "кафедра" => teachers.OrderBy(t => t.Department.Name).ToList(),
+                "факультет" => teachers.OrderBy(t => t.Department.Faculty.Name).ToList(),
+                _ => teachers.OrderBy(t => t.FullName).ToList()
+            };
+            Console.WriteLine($"\nСписок викладачів (сортовано за: {sortBy}):");
+            foreach (var t in teachers)
+            {
+                Console.WriteLine($"{t.FullName}, Кафедра: {t.Department.Name}, Факультет: {t.Department.Faculty.Name}");
+            }
+        }
     }
     public class Department
     {
