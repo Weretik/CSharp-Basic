@@ -110,6 +110,44 @@ The repository is organized into the following folders, corresponding to differe
    - **Task 2**: Created separate namespaces for different classes and demonstrated that a public method in a class is accessible not only from the current assembly but also from a derived class in an external assembly.
    - **Task 4**: Defined a custom namespace `MyNamespace` containing a class `MyClass` and successfully linked it to another program.
 
+
+19. **[C# Basic] Course Project. Task 9: HR Department at the University**  
+    **Path**: `TasksOfSCharp/HR Department at the University (Course Project)/`
+
+    ### Task Description
+
+    Create a console application **“HR Department at the University”** that functions as a personnel directory for a university.  
+    The university consists of faculties, departments, and student groups.  
+    Each department has a head, and each group has a group leader (head student) and a profile department.
+
+    A person in the system can simultaneously have multiple roles:
+    - A student (with information about parents and group),
+    - A teacher (with department and position),
+    - A parent (of one or more students).
+
+    ### Program Features:
+
+    1. Load and save the directory data from/to disk.
+    2. Full data editing capabilities.
+    3. View and filter information using different criteria:
+
+       - List of all students with sorting by full name, faculty, group, and profile department.
+       - List of students without parent information.
+       - List of all teachers with sorting options.
+       - List of all department heads.
+       - List of groups without head students and departments without heads.
+       - Search for all student children of a specific parent.
+       - List of teachers who have student children.
+
+    ### Project File Structure:
+
+    - [`Program.cs`](./HR%20Department%20at%20the%20University%20(Course%20Project)/Program.cs) – Entry point of the application, handles console interface and logic.
+    - [`Interfaces.cs`](./HR%20Department%20at%20the%20University%20(Course%20Project)/Interfaces.cs) – Contains interfaces `IStudent`, `ITeacher`, and `IParent` to define role behaviors.
+    - [`Person.cs`](./HR%20Department%20at%20the%20University%20(Course%20Project)/Person.cs) – Implementation of the `Person` class and the relationships between children and parents.
+    - [`University.cs`](./HR%20Department%20at%20the%20University%20(Course%20Project)/University.cs) – Core logic and structure of the university (faculties, departments, groups, people).
+
+
+
 Each section contains one or more C# files that demonstrate concepts through practical examples.
 
 ## Requirements
