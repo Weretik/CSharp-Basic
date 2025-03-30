@@ -120,6 +120,28 @@ namespace HR_Department_at_the_University__Course_Project_
                 Console.WriteLine($"{t.FullName}, Кафедра: {t.Department.Name}, Факультет: {t.Department.Faculty.Name}");
             }
         }
+
+        /// 6. Повертає список у заданого батька всіх його дітей-студентів.
+        public void ShowAllChildrenStudentsOfParent(PersonFull parent)
+        {
+            
+            var students = parent.Children
+                .OfType<PersonFull>()
+                .Where(c => c.IsStudent)
+                .ToList();
+
+            if (!students.Any())
+            {
+                Console.WriteLine("Немає дітей-студентів.");
+                return;
+            }
+
+            Console.WriteLine($"\nСписок дітей-студентів батька {parent.FullName}:");
+            foreach (var s in students)
+            {
+                Console.WriteLine($"{s.FullName}");
+            }
+        }
     }
     public class Department
     {
