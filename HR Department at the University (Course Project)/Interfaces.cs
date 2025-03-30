@@ -7,14 +7,18 @@ using System.Threading.Tasks;
 
 namespace HR_Department_at_the_University__Course_Project_
 {
-    internal interface IStudent
+    public interface IStudent
     {
         Group Group { get; set; }
-        List<IParent> Parents { get; set; }
+        List<Person> Parents { get; set; }
     }
-    internal interface ITeacher
+    public interface ITeacher
     {
-        Department ProfileDepartment { get; set; }
+        Department Department { get; set; }
         string Position { get; set; }
+    }
+    public interface IParent
+    {
+        List<Person> Children { get; set; }
     }
 }
