@@ -142,6 +142,87 @@ namespace HR_Department_at_the_University__Course_Project_
                 Console.WriteLine($"{s.FullName}");
             }
         }
+
+        /// Заповнює тестовими даними
+        public void SeedTestData()
+        {
+            Name = "НТУ \"ХПІ\"";
+
+            //  ФАКУЛЬТЕТИ 
+            var fit = new Faculty { Name = "ФІТ" };
+            var fem = new Faculty { Name = "ФЕМ" };
+
+            //  КАФЕДРИ 
+            var kafProg = new Department { Name = "Кафедра програмування", Faculty = fit, IsProfile = true };
+            var kafMath = new Department { Name = "Кафедра вищої математики", Faculty = fit, IsProfile = false };
+            var kafEconom = new Department { Name = "Кафедра економіки", Faculty = fem, IsProfile = true };
+            var kafEmpty = new Department { Name = "Кафедра без завідувача", Faculty = fem, IsProfile = false };
+
+            // ГРУПИ
+            var group1 = new Group { Name = "ІТ-101", ProfileDepartment = kafProg };
+            var group2 = new Group { Name = "ІТ-102", ProfileDepartment = kafMath }; // без старости
+            var group3 = new Group { Name = "ЕК-201", ProfileDepartment = kafEconom };
+
+            kafProg.Groups.Add(group1);
+            kafMath.Groups.Add(group2);
+            kafEconom.Groups.Add(group3);
+
+            // ЛЮДИ
+            var student1 = new PersonFull("Анна", "Іваненко", "Петрівна", "Ж", "AA111111", "Київ", isStudent: true);
+            var student2 = new PersonFull("Олег", "Ковальчук", "Сергійович", "Ч", "AA222222", "Київ", isStudent: true);
+            var student3 = new PersonFull("Ірина", "Мельник", "Олегівна", "Ж", "AA333333", "Харків", isStudent: true);
+            var student4 = new PersonFull("Марина", "Гончар", "Вікторівна", "Ж", "AA444444", "Львів", isStudent: true);
+
+            var teacher1 = new PersonFull("Олександр", "Пономаренко", "Іванович", "Ч", "BB111111", "Київ", isTeacher: true);
+            var teacher2 = new PersonFull("Наталія", "Семенова", "Андріївна", "Ж", "BB222222", "Одеса", isTeacher: true);
+            var teacher3 = new PersonFull("Юрій", "Бойко", "Петрович", "Ч", "BB333333", "Київ", isTeacher: true);
+
+            var combo = new PersonFull("Інна", "Шевченко", "Валеріївна", "Ж", "CC111111", "Київ", isStudent: true, isTeacher: true);
+
+            var parent1 = new PersonFull("Іван", "Ковальчук", "Миколайович", "Ч", "PP111111", "Київ", isParent: true);
+            var parent2 = new PersonFull("Світлана", "Ковальчук", "Анатоліївна", "Ж", "PP222222", "Київ", isParent: true);
+
+            var personWithoutRole = new PersonFull("Тест", "Безролевий", "Людина", "Ч", "ZZ000000", "Херсон");
+
+            // РОЛІ
+            teacher1.Department = kafProg;
+            teacher2.Department = kafMath;
+            teacher3.Department = kafEconom;
+            combo.Department = kafProg;
+
+            //  ЗАВІДУВАЧ 
+            kafProg.HeadOfDepartment = teacher1;
+            kafEconom.HeadOfDepartment = teacher3;
+
+            // СТУДЕНТИ У ГРУПАХ 
+            student1.Group = group1;
+            student2.Group = group1;
+            student3.Group = group2;
+            student4.Group = group3;
+            combo.Group = group1;
+
+            // СТАРОСТА 
+            group1.HeadStudent = student1;
+
+            // ДІТИ + БАТЬКИ
+            student2.AddParent(parent1);
+            student3.AddParent(parent1); 
+            student3.AddParent(parent2);
+            student4.AddParent(parent2);
+
+            // ДОДАЄМО ДО УНІВЕРСИТЕТУ
+            fit.Departments.AddRange(new[] { kafProg, kafMath });
+            fem.Departments.AddRange(new[] { kafEconom, kafEmpty });
+
+            Faculties.AddRange(new[] { fit, fem });
+            group1.Students.AddRange(new[] { student1, student2, combo });
+            group2.Students.Add(student3);
+            group3.Students.Add(student4);
+
+            kafProg.Teachers.AddRange(new[] { teacher1, combo });
+            kafMath.Teachers.Add(teacher2);
+            kafEconom.Teachers.Add(teacher3);
+        }
     }
     public class Department
     {
