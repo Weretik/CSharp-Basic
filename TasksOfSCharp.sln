@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anonymous and dynamic types
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namespace. Preprocessor directives.", "Namespace. Preprocessor directives\Namespace. Preprocessor directives..csproj", "{A8F605E4-C159-4EED-8A1D-0BA905CFD245}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR Department at the University (Course Project)", "HR Department at the University (Course Project)\HR Department at the University (Course Project).csproj", "{36E23567-31C0-47C7-B02F-046EF19ED6C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{A8F605E4-C159-4EED-8A1D-0BA905CFD245}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8F605E4-C159-4EED-8A1D-0BA905CFD245}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8F605E4-C159-4EED-8A1D-0BA905CFD245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E23567-31C0-47C7-B02F-046EF19ED6C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E23567-31C0-47C7-B02F-046EF19ED6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E23567-31C0-47C7-B02F-046EF19ED6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E23567-31C0-47C7-B02F-046EF19ED6C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
