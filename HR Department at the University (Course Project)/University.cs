@@ -65,6 +65,20 @@ namespace HR_Department_at_the_University__Course_Project_
                 Console.WriteLine($"{t.FullName}, Кафедра: {t.Department.Name}, Факультет: {t.Department.Faculty.Name}");
             }
         }
+
+        /// Пункт 4: Повертає список усіх завідувачів кафедр 
+        public void ShowAllHeadsOfDepartments()
+        {
+            var heads = Faculties
+                .SelectMany(f => f.Departments)
+                .Where(d => d.HeadOfDepartment != null)
+                .ToList();
+            Console.WriteLine("\nСписок завідувачів кафедр:");
+            foreach (var h in heads)
+            {
+                Console.WriteLine($"{h.HeadOfDepartment?.FullName}, Кафедра: {h.Name}, Факультет: {h.Faculty.Name}");
+            }
+        }
     }
     public class Department
     {
