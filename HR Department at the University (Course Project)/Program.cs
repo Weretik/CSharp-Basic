@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            /*
+             * 
+             * Console.Write("Сортувати за (піб/група/кафедра/факультет): ");
+             * string sortBy = Console.ReadLine();
+             * university.ShowStudentsWithoutParents(sortBy);
+            */
         }
     }
 }

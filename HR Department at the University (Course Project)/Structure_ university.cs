@@ -13,13 +13,13 @@ namespace HR_Department_at_the_University__Course_Project_
         public override string ToString() => $"Університет: {Name}";
 
         /// Пункт 1: Повертає список усіх студентів з можливістю сортування
-        public void ShowAllStudents(string sortBy)
+        public void ShowAllStudents(string sortBy, bool isParents = true)
         {
             var students = Faculties
                 .SelectMany(f => f.Departments)
                 .SelectMany(d => d.Groups)
                 .SelectMany(g => g.Students)
-                .Where(s => s.IsStudent)
+                .Where(s => s.IsStudent && isParents ? s.Parents.Count >= 0 : s.Parents.Count == 0)
                 .ToList();
 
             students = sortBy.ToLower() switch
@@ -36,6 +36,12 @@ namespace HR_Department_at_the_University__Course_Project_
             {
                 Console.WriteLine($"{s.FullName}, Група: {s.Group.Name}, Кафедра: {s.Group.ProfileDepartment.Name}, Факультет: {s.Group.ProfileDepartment.Faculty.Name}");
             }
+        }
+
+        /// Пункт 2: Повертає список усіх студентів без батьків з можливістю сортування
+        public void ShowAllStudentsWithoutParents(string sortBy)
+        {
+            ShowAllStudents(sortBy, false);
         }
     }
     public class Department
