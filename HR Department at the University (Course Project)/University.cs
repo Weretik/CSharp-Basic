@@ -105,6 +105,21 @@ namespace HR_Department_at_the_University__Course_Project_
                 Console.WriteLine($"{d.Name}, Факультет: {d.Faculty.Name}");
             }
         }
+
+        /// 7. Повертає cписок усіх викладачів, які мають дітей-студентів.
+        public void ShowAllTeachersWithChildrenStudents()
+        {
+            var teachers = Faculties
+                .SelectMany(f => f.Departments)
+                .SelectMany(d => d.Teachers)
+                .Where(t => t.Children.OfType<PersonFull>().Any(c => c.IsStudent))
+                .ToList();
+            Console.WriteLine("\nСписок викладачів, які мають дітей-студентів:");
+            foreach (var t in teachers)
+            {
+                Console.WriteLine($"{t.FullName}, Кафедра: {t.Department.Name}, Факультет: {t.Department.Faculty.Name}");
+            }
+        }
     }
     public class Department
     {
